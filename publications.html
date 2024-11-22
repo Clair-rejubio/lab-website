@@ -7,16 +7,22 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="publications.html">Publications</a></li>
+    <header class="bg-gray-900 py-8 px-6">
+        <div class="container mx-auto flex justify-between items-center">
+          <a href="index.html" class="text-white font-bold text-2xl">
+            Xinyang Conquer Aging Lab
+          </a>
+          <nav class="hidden md:block">
+            <ul class="flex space-x-6 text-gray-400 hover:text-white transition-colors duration-300">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="research.html">Research</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="publications.html">Publications</a></li>
+              <li><a href="resources.html">Resources</a></li>
             </ul>
-        </nav>
-    </header>
+          </nav>
+        </div>
+      </header>
 
     <main>
         <section id="publications">
@@ -53,5 +59,44 @@
             <a href="#" class="social-icon">Instagram</a>
         </div>
     </footer>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications | XCAL</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* 直接在HTML文件中添加的CSS样式 */
+        a {
+            transition: color 0.3s ease, text-decoration 0.3s ease;
+        }
+        a:hover {
+            color: #4CAF50;
+            text-decoration: underline;
+        }
+        a:active {
+            color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- 页面内容 -->
+    <script>
+        // 获取所有的超链接
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('mouseover', function() {
+                // 鼠标悬停时改变背景颜色
+                this.style.backgroundColor = '#f0f0f0';
+            });
+            link.addEventListener('mouseout', function() {
+                // 鼠标离开时恢复背景颜色
+                this.style.backgroundColor = '';
+            });
+        });
+    </script>
 </body>
 </html>
