@@ -76,27 +76,11 @@
         }
         a:hover {
             color: #4CAF50;
-            text-decoration: underline;
+            text-decoration: none;
         }
         a:active {
             color: #45a049;
         }
     </style>
 </head>
-<body>
-    <!-- 页面内容 -->
-    <script>
-        // 获取所有的超链接
-        document.querySelectorAll('a').forEach(link => {
-            link.addEventListener('mouseover', function() {
-                // 鼠标悬停时改变背景颜色
-                this.style.backgroundColor = '#f0f0f0';
-            });
-            link.addEventListener('mouseout', function() {
-                // 鼠标离开时恢复背景颜色
-                this.style.backgroundColor = '';
-            });
-        });
-    </script>
-</body>
 </html>

@@ -222,14 +222,41 @@ footer {
 
 /* 在你的 styles.css 文件中添加 */
 a {
-    transition: color 0.3s ease, text-decoration 0.3s ease; /* 平滑颜色和下划线的变化 */
+    transition: color 0.3s ease, text-decoration 0s ease; /* 平滑颜色和下划线的变化 */
   }
   
   a:hover {
     color: #4CAF50; /* 鼠标悬停时的颜色 */
-    text-decoration: underline; /* 鼠标悬停时添加下划线 */
+    text-decoration: none; /* 确保悬停时没有下划线 */
   }
   
   a:active {
     color: #45a049; /* 点击时的颜色 */
   }
+
+/* 在您的 styles.css 文件中或 <style> 标签内添加/更新以下样式 */
+
+/* 重置链接的默认样式 */
+a {
+    color: #327fdc; /* 设置链接颜色为蓝色 */
+    text-decoration: none; /* 移除下划线 */
+    transition: color 0.3s ease; /* 平滑颜色变化，如果需要 */
+}
+
+/* 悬停状态 */
+a:hover {
+    color: #327fdc; /* 悬停时颜色保持蓝色 */
+    text-decoration: none; /* 确保悬停时没有下划线 */
+}
+/* 在您的 styles.css 文件中或 <style> 标签内添加/更新以下样式 */
+
+section {
+    margin-bottom: 20px; /* 减少外边距 */
+    padding: 20px; /* 减少内边距 */
+}
+
+/* 如果需要，也可以为特定的 section 元素设置样式 */
+#hero, #about, #research, #Support_Our_Research {
+    margin-bottom: 20px; /* 减少外边距 */
+    padding: 20px; /* 减少内边距 */
+}
