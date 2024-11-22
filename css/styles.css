@@ -1,16 +1,16 @@
 /* Enhanced Base styles */
 :root {
-    --primary-color: #2c3e50;
+    --primary-color: #0c4d8f;
     --secondary-color: #3498db;
     --accent-color: #e74c3c;
     --light-bg: #f8f9fa;
-    --dark-bg: #2c3e50;
+    --dark-bg: #12508e;
     --text-color: #333;
     --light-text: #fff;
 }
 
 body {
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: 'Open Sans', inherit, sans-serif;
     line-height: 1.8;
     color: var(--text-color);
     margin: 0;
@@ -52,7 +52,7 @@ nav a:hover {
 
 /* Enhanced Hero Section */
 #hero {
-    background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('hero-bg.jpg');
+    background: linear-gradient(rgba(11, 51, 92, 0.8), rgba(44, 62, 80, 0.8)), url('hero-bg.jpg');
     background-size: cover;
     background-position: center;
     color: var(--light-text);
