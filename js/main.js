@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     menuToggle?.addEventListener('click', () => {
         nav.classList.toggle('active');
+
+    const img = new Image();
+        img.src = 'images/official account qrcode.jpg';
     });
 });
 

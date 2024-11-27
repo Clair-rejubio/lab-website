@@ -232,6 +232,32 @@ section h2:after {
     color: var(--secondary-color);
 }
 
+.wechat-container {
+    position: relative;
+    display: inline-block;
+}
+
+.qr-code {
+    display: none;
+    position: absolute;
+    top: 100%;  /* Position below the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;  /* Smaller size */
+    height: 100px;  /* Smaller size */
+    padding: 5px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+    margin-top: 10px;  /* Add some space between icon and QR code */
+}
+
+.wechat-container:hover .qr-code {
+    display: block;
+}
+
 /* Contact Section */
 #contact {
     background: var(--light-bg);
