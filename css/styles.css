@@ -366,6 +366,12 @@ section {
     display: block;
 }
 
-.caret {
-    color: white; /* 设置为白色 */
+.dropbtn i {
+    margin-left: 5px; /* 与文本间距 */
+}
+
+@media (max-width: 768px) {
+    .dropbtn::after {
+        border-width: 6px; /* 在小屏幕上使用较小的箭头 */
+    }
 }
