@@ -11,3 +11,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// 获取所有的dropdown元素
+var dropdowns = document.getElementsByClassName("dropdown");
+
+// 为每个dropdown添加点击事件监听器
+for (var i = 0; i < dropdowns.length; i++) {
+    dropdowns[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.querySelector(".dropdown-content");
+        if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+        } else {
+            dropdownContent.style.display = "block";
+        }
+    });
+}
