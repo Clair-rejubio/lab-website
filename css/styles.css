@@ -366,4 +366,6 @@ section {
     display: block;
 }
 
+.caret {
+    color: white; /* 设置为白色 */
 }
