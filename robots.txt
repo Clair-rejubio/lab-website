@@ -1,2 +1,0 @@
-Sitemap: https://xcal.rejubio.cn/sitemap.xml
-User-agent: *
