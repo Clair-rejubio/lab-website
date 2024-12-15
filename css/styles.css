@@ -1,10 +1,10 @@
 /* Enhanced Base styles */
 :root {
-    --primary-color: #0c4d8f;
-    --secondary-color: #3498db;
+    --primary-color: #2c6c32;
+    --secondary-color: #45a049;
     --accent-color: #e74c3c;
     --light-bg: #f8f9fa;
-    --dark-bg: #12508e;
+    --dark-bg: #2c6c32;
     --text-color: #333;
     --light-text: #fff;
 }
@@ -82,7 +82,7 @@ nav a:hover {
 }
 
 .cta-button:hover {
-    background: #2980b9;
+    background: #45a049;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
@@ -147,7 +147,7 @@ section h2:after {
 }
 
 .footer {
-    background: linear-gradient(135deg, #0c4d8f, #12508e);
+    background: linear-gradient(135deg, #3f9a44, #12508e);
     color: #ffffff;
     padding: 4rem 0 2rem;
   }
@@ -180,7 +180,7 @@ section h2:after {
     bottom: 0;
     width: 50px;
     height: 2px;
-    background: #3498db;
+    background: #ffffff;
   }
 
   .footer-links {
@@ -199,7 +199,7 @@ section h2:after {
   }
 
   .footer-links a:hover {
-    color: #3498db;
+    color: #45a049;
   }
 
   .footer-bottom {
@@ -320,7 +320,7 @@ a {
 
 /* 重置链接的默认样式 */
 a {
-    color: #327fdc; /* 设置链接颜色为蓝色 */
+    color: #45a049; /* 设置链接颜色为绿色 */
     text-decoration: none; /* 移除下划线 */
     transition: color 0.3s ease; /* 平滑颜色变化，如果需要 */
 }
@@ -347,7 +347,7 @@ section {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #0c4d8f;
+    background-color: #2c6c32;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
