@@ -7,6 +7,27 @@
   <title>Team | XCAL</title>
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .team-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px; /* 团队成员之间的间距 */
+    }
+    .team-member {
+        flex: 1 1 calc(33.333% - 20px); /* 每个成员占据33.333%的宽度，减去间距 */
+        box-sizing: border-box;
+        padding: 10px;
+        /* 移除边框 */
+        /* border: 1px solid #ccc; */
+    }
+    .team-member img {
+        max-width: 100%;
+        height: auto;
+    }
+    /* 其他样式... */
+</style>
+
+
 </head>
 
 <body>
@@ -24,7 +45,7 @@
                 <div class="dropdown-content">
                     <a href="lab-intro.html">Lab Intro</a>
                     <a href="bilu-huang.html">Bilu Huang</a>
-                    <a href="team.html">Group Members</a>
+                    <a href="team.html">Team</a>
                 </div>
             </li>
             <li><a href="publications.html">Publications</a></li>
@@ -55,14 +76,29 @@
           href="https://www.quora.com/profile/Bilu-Huang">Bilu Huang - Quora</a></span>
       </div>
 
-
-      </div>
-
+      <section class="team-grid">
       <div class="team-member">
         <img src="../images/xiaowen hu.jpg" alt="Team Member">
         <h3>Lab Manager</h3>
         <p>Research focus: biological aging mechanism</p>
       </div>
+
+        <div class="team-member">
+            <img src="../images/fengjiaxuan.jpg" alt="Team Member">
+            <h3>Scientific Advisor</h3>
+            <p>Associate Professor, Deputy Chief Physician, Department of Vascular Surgery, Ruijin Hospital Affiliated To Shanghai Jiaotong University Medical College</p>
+            <p>Good at minimally invasive diagnosis and treatment of various vascular diseases, especially the comprehensive diagnosis and treatment and rapid rehabilitation of critical and difficult aortic diseases, visceral artery diseases and elderly arteriosclerosis obliterans.</p>
+            <p>Member of the special Committee on Visceral Artery Disease, Branch of Vascular Surgeons, Chinese Medical Doctor Association, the Society for Vascular Surgery, the European Society for Vascular Surgery and Faculty of 1000.</p>
+        </div>
+
+        <div class="team-member">
+          <img src="../images/kaichen.jpg" alt="Team Member">
+          <h3>Scientific Advisor</h3>
+          <p>Deputy Chief Physician, Department of Thoracic Surgery, Ruijin Hospital Affiliated To Shanghai Jiaotong University Medical College</p>
+          <p>Deeply engaged in the clinical diagnosis and treatment of thoracic surgery for nearly 20 years, and has participated in the formulation and implementation of the corresponding diagnosis and treatment plans for difficult and complex diseases as a leading expert in the multidisciplinary consultation of lung cancer, esophageal cancer and mediastinal tumor.</p>
+          <p>Member of Thoracic Surgery Branch of Chinese Medical Doctor Association, Chinese Medical Doctor Association Medical Robot Professional Committee and Chinese Medical Education Association Thoracic Surgery Committee.</p>
+        </div>
+
       <!-- Add more team members as needed -->
     </section>
   </main>

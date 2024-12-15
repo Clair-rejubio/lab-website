@@ -7,6 +7,28 @@
   <title>团队成员 | XCAL</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>团队成员 | XCAL</title>
+  <style>
+    .team-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px; /* 团队成员之间的间距 */
+    }
+    .team-member {
+        flex: 1 1 calc(33.333% - 20px); /* 每个成员占据33.333%的宽度，减去间距 */
+        box-sizing: border-box;
+        padding: 10px;
+        /* 移除边框 */
+        /* border: 1px solid #ccc; */
+    }
+    .team-member img {
+        max-width: 100%;
+        height: auto;
+    }
+    /* 其他样式... */
+</style>
 </head>
 
 <body>
@@ -51,14 +73,36 @@
           href="https://www.zhihu.com/people/huang-bi-lu-zheng-fu-shuai-lao">黄必录 - 知乎</a></span>
       </div>
           
+      <section class="team-grid">
+        <div class="team-member">
+          <img src="images/xiaowen hu.jpg" alt="Team Member">
+          <h3>研究所管理</h3>
+          <p>研究兴趣: 生物衰老机制</p>
+        </div>
 
+        <div class="team-member">
+            <img src="images/fengjiaxuan.jpg" alt="Team Member">
+            <h3>科学顾问</h3>
+            <p>上海交通大学医学院附属瑞金医院-普外科-血管外科副主任医师，副教授</p>
+            <p>临床擅长各类血管疾病的微创诊治，特别是危重疑难主动脉疾病、内脏动脉疾病、老年动脉硬化闭塞症的综合诊治和快速康复等。</p>
+            <p>学术任职：中国医师协会血管外科医师分会内脏动脉疾病专委会委员，美国血管外科协会（SVS）国际委员，欧洲血管外科（ESVS）国际委员，Faculty of 1000 委员。</p>
+        </div>
+
+        <div class="team-member">
+          <img src="images/kaichen.jpg" alt="Team Member">
+          <h3>科学顾问</h3>
+          <p>上海交通大学医学院附属瑞金医院-胸外科副主任医师</p>
+          <p>深耕胸外科临床诊治近20年，作为肺癌多学科会诊、食管癌多学科会诊及纵隔肿瘤多学科会诊主要专家参与相应疑难复杂疾病诊治方案的制定及执行</p>
+          <p>学术任职：中国医师协会胸外科分会会员，中国医师协会医学机器人专业委员会委员，中国医药教育协会胸外科专业委员会委员。</p>
+        </div>
+
+
+
+        <!-- 添加更多团队成员 -->
+    </section>
       </div>
 
-      <div class="team-member">
-        <img src="images/xiaowen hu.jpg" alt="Team Member">
-        <h3>研究所管理</h3>
-        <p>研究兴趣: 生物衰老机制</p>
-      </div>
+
       <!-- Add more team members as needed -->
     </section>
   </main>
