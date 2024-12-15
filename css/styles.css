@@ -1,10 +1,10 @@
 /* Enhanced Base styles */
 :root {
-    --primary-color: #2c6c32;
+    --primary-color: #37883f;
     --secondary-color: #45a049;
     --accent-color: #e74c3c;
     --light-bg: #f8f9fa;
-    --dark-bg: #2c6c32;
+    --dark-bg: #37883f;
     --text-color: #333;
     --light-text: #fff;
 }
@@ -347,7 +347,7 @@ section {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #2c6c32;
+    background-color: #37883f;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
