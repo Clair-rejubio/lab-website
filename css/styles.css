@@ -146,6 +146,24 @@ section h2:after {
     font-size: 1.5rem;
 }
 
+.team-member {
+  width: 100%;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.member-description {
+  padding: 0 15px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.member-title {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
 .footer {
     background: linear-gradient(135deg, #3f9a44, #12508e);
     color: #ffffff;
