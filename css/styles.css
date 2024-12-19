@@ -355,7 +355,7 @@ a {
 
 /* 悬停状态 */
 a:hover {
-    color: #327fdc; /* 悬停时颜色保持蓝色 */
+    color: #DB0058; /* 悬停时颜色保持三角梅玫红色 */
     text-decoration: none; /* 确保悬停时没有下划线 */
 }
 /* 在您的 styles.css 文件中或 <style> 标签内添加/更新以下样式 */
