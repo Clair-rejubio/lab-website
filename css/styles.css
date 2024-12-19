@@ -319,7 +319,7 @@ section h2:after {
 .button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #4CAF50; /* Green */
+    background-color: #e62874; /* 玫红色 */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -327,7 +327,7 @@ section h2:after {
 }
 
 .button:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #DB0058; /* 玫红色 on hover */
 }
 
 /* 在你的 styles.css 文件中添加 */
