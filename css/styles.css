@@ -268,7 +268,7 @@ section h2:after {
 .qr-code {
     display: none;
     position: absolute;
-    top: 100%;  /* Position below the icon */
+    top: -290%;  /* Position below the icon */
     left: 50%;
     transform: translateX(-50%);
     width: 100px;  /* Smaller size */
