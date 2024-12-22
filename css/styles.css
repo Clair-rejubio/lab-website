@@ -268,7 +268,7 @@ section h2:after {
 .qr-code {
     display: none;
     position: absolute;
-    top: -290%;  /* Position below the icon */
+    top: -290%;  /* Position above the icon */
     left: 50%;
     transform: translateX(-50%);
     width: 100px;  /* Smaller size */
@@ -434,3 +434,43 @@ section {
     transform: scale(1.05); /* 鼠标悬停时放大 */
 }
 
+
+/* 隐藏导航栏 */
+.nav-container {
+    display: none;
+  }
+  
+  /* 汉堡菜单图标 */
+  .hamburger {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    position: relative;
+  }
+  
+  .hamburger::before,
+  .hamburger::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    transition: all 0.3s ease;
+  }
+  
+  .hamburger::before {
+    top: -8px;
+  }
+  
+  .hamburger::after {
+    top: 8px;
+  }
+  
+  /* 响应式布局 */
+  @media (min-width: 768px) {
+    .nav-container {
+      display: block; /* 在桌面设备上显示 */
+    }
+  }

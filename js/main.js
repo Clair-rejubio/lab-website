@@ -26,3 +26,12 @@ for (var i = 0; i < dropdowns.length; i++) {
         }
     });
 }
+
+document.querySelector('.nav-toggle').addEventListener('click', function() {
+    const navContainer = document.querySelector('.nav-container');
+    if (navContainer.style.display === 'block') {
+      navContainer.style.display = 'none';
+    } else {
+      navContainer.style.display = 'block';
+    }
+  });
