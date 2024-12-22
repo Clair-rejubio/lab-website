@@ -434,18 +434,19 @@ section {
     transform: scale(1.05); /* 鼠标悬停时放大 */
 }
 
-
-/* 隐藏导航栏 */
-.nav-container {
-    display: none;
+/* 导航菜单默认隐藏 */
+.nav-menu {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
   }
   
-  /* 汉堡菜单图标 */
+  /* 汉堡按钮样式 */
   .hamburger {
     display: block;
     width: 25px;
     height: 3px;
-    background-color: black;
+    background-color: #333;
     position: relative;
   }
   
@@ -455,7 +456,7 @@ section {
     display: block;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: #333;
     position: absolute;
     transition: all 0.3s ease;
   }
@@ -470,7 +471,19 @@ section {
   
   /* 响应式布局 */
   @media (min-width: 768px) {
-    .nav-container {
-      display: block; /* 在桌面设备上显示 */
+    .nav-menu {
+      height: auto; /* 在桌面设备上显示 */
     }
+  }
+
+  /* 遮罩层样式 */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
   }
