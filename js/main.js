@@ -27,29 +27,3 @@ for (var i = 0; i < dropdowns.length; i++) {
     });
 }
 
-document.querySelector('.nav-toggle').addEventListener('click', function() {
-    var navMenu = document.querySelector('.nav-menu');
-    if (navMenu.style.height === '0px') {
-      navMenu.style.height = 'auto'; // 或者设置一个具体的高度
-    } else {
-      navMenu.style.height = '0';
-    }
-  });
-
-  // 显示遮罩层和导航菜单
-function openNav() {
-    document.querySelector('.nav-menu').style.height = 'auto';
-    document.querySelector('.overlay').style.display = 'block';
-  }
-  
-  // 隐藏遮罩层和导航菜单
-  function closeNav() {
-    document.querySelector('.nav-menu').style.height = '0';
-    document.querySelector('.overlay').style.display = 'none';
-  }
-  
-  // 为汉堡按钮添加事件监听
-  document.querySelector('.nav-toggle').addEventListener('click', openNav);
-  
-  // 为遮罩层添加事件监听
-  document.querySelector('.overlay').addEventListener('click', closeNav);
