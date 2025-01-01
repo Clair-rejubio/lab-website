@@ -460,7 +460,23 @@ section {
   }
   
   .paper-gallery img:hover {
-    transform: scale(1.1); /* 鼠标悬停时放大 */
+    transform: scale(1.01); /* 鼠标悬停时放大 */
     box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* 添加阴影效果 */
     cursor: pointer; /* 鼠标悬停时显示手型指针 */
+  }
+
+  /* 新增的CSS样式 */
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 创建两列的网格布局 */
+    gap: 20px; /* 图片之间的间隔 */
+    width: 100%; /* 容器宽度为100% */
+    padding: 20px; /* 内边距 */
+  }
+  
+  .logo-grid img {
+    width: 100%; /* 图片宽度为网格列宽 */
+    height: auto; /* 高度自适应 */
+    object-fit: contain; /* 保持图片比例 */
+    max-height: 100px; /* 设置最大高度 */
   }
