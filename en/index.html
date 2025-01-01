@@ -30,30 +30,35 @@
 </head>
 
 <body>
+
     <header>
-        
         <nav class="navbar">
+            <div class="hamburger-menu" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="research.html">Research</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropbtn">About Us <i class="fas fa-chevron-down"></i></a>
-                    <div class="dropdown-content">
+                    <a href="#" class="dropbtn" aria-expanded="false">About Us <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content" aria-label="サブメニュー">
                         <a href="bilu-huang.html">Bilu Huang</a>
                         <a href="team.html">Team</a>
                     </div>
                 </li>
                 <li><a href="publications.html">Publications</a></li>
                 <li><a href="#">Press</a></li>
-                    <li class="lang-switch">
-                        <a href="../index.html">
-                            <i class="fas fa-globe"></i>
-                            中文
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+                <li class="lang-switch">
+                    <a href="../index.html">
+                        <i class="fas fa-globe"></i>
+                        中文
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -145,6 +150,9 @@
             <p>&copy; 2024 Rejuvenation Biotech Co Ltd. All rights reserved. Designed by Xiaowen Hu.</p>
         </div>
     </footer>
+
+    <script src="js/main.js"></script>
+
 </body>
 
 
