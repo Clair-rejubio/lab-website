@@ -434,3 +434,33 @@ section {
     transform: scale(1.05); /* 鼠标悬停时放大 */
 }
 
+/* 新增的CSS样式 */
+.paper-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 创建三列的网格布局 */
+    gap: 10px; /* 图片之间的间隔 */
+    width: 100%; /* 容器宽度为100% */
+    padding: 20px; /* 内边距 */
+  }
+  
+  .paper-gallery img {
+    width: 100%; /* 图片宽度为网格列宽 */
+    height: auto; /* 高度自适应 */
+    object-fit: cover; /* 保持图片比例 */
+    border-radius: 8px; /* 图片圆角 */
+  }
+
+  /* 鼠标悬停动画效果 */
+.paper-gallery img {
+    width: 100%; /* 图片宽度为网格列宽 */
+    height: auto; /* 高度自适应 */
+    object-fit: cover; /* 保持图片比例 */
+    border-radius: 8px; /* 图片圆角 */
+    transition: transform 0.3s ease; /* 平滑变换效果 */
+  }
+  
+  .paper-gallery img:hover {
+    transform: scale(1.1); /* 鼠标悬停时放大 */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* 添加阴影效果 */
+    cursor: pointer; /* 鼠标悬停时显示手型指针 */
+  }
