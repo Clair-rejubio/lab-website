@@ -442,7 +442,7 @@ section {
     width: 100%; /* 容器宽度为100% */
     padding: 20px; /* 内边距 */
   }
-  
+
   .paper-gallery img {
     width: 100%; /* 图片宽度为网格列宽 */
     height: auto; /* 高度自适应 */
@@ -458,7 +458,7 @@ section {
     border-radius: 8px; /* 图片圆角 */
     transition: transform 0.3s ease; /* 平滑变换效果 */
   }
-  
+
   .paper-gallery img:hover {
     transform: scale(1.01); /* 鼠标悬停时放大 */
     box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* 添加阴影效果 */
@@ -473,10 +473,72 @@ section {
     width: 100%; /* 容器宽度为100% */
     padding: 20px; /* 内边距 */
   }
-  
+
   .logo-grid img {
     width: 100%; /* 图片宽度为网格列宽 */
     height: auto; /* 高度自适应 */
     object-fit: contain; /* 保持图片比例 */
     max-height: 100px; /* 设置最大高度 */
   }
+
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: var(--dark-bg);
+        padding: 20px 0;
+    }
+
+    .nav-menu.active {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    nav li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .dropdown-content {
+        position: static;
+        background-color: rgba(55, 136, 63, 0.9);
+        display: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+
+    .dropdown.active .dropdown-content {
+        display: block;
+    }
+}

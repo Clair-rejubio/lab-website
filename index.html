@@ -25,30 +25,37 @@
         }
     </style>
 </head>
-
 <body>
-            <nav class="navbar">
-                <ul class="nav-menu">
-                    <li><a href="index.html">主页</a></li>
-                    <li><a href="research.html">研究方向</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropbtn">关于我们 <i class="fas fa-chevron-down"></i></a>
-                        <div class="dropdown-content">
-                            <a href="bilu-huang.html">黄必录介绍</a>
-                            <a href="team.html">团队成员</a>
-                        </div>
-                    </li>
-                    <li><a href="publications.html">学术成果</a></li>
-                    <li><a href="#">媒体报道</a></li>
-                    <li class="lang-switch">
-                        <a href="en/index.html">
-                            <i class="fas fa-globe"></i>
-                            ENG
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+    <header>
+        <nav class="navbar">
+            <div class="hamburger-menu" aria-label="メニュー">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-menu">
+                <li><a href="index.html">主页</a></li>
+                <li><a href="research.html">研究方向</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn" aria-expanded="false">
+                        关于我们 <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-content" aria-label="サブメニュー">
+                        <a href="bilu-huang.html">黄必录介绍</a>
+                        <a href="team.html">团队成员</a>
+                    </div>
+                </li>
+                <li><a href="publications.html">学术成果</a></li>
+                <li><a href="#">媒体报道</a></li>
+                <li class="lang-switch">
+                    <a href="en/index.html">
+                        <i class="fas fa-globe"></i>
+                        ENG
+                    </a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -135,6 +142,7 @@
             <p>&copy; 2024 上海复壮生物科技有限公司 All rights reserved. Designed by Xiaowen Hu.</p>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 
 
