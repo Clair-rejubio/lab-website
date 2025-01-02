@@ -542,3 +542,19 @@ section {
         display: block;
     }
 }
+
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    padding: 10px; /* 减少padding */
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 20px; /* 减少宽度 */
+    height: 2px; /* 减少高度 */
+    background-color: white;
+    margin: 3px 0; /* 减少间距 */
+    transition: 0.4s;
+}
